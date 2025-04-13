@@ -1,0 +1,23 @@
+admin-user (admin) id: 6
+------------------------------
+admin@mail.com
+bigboss
+eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2fQ.iE7AeDqPSwXwaJ0lDhQSLzDA4n8Th_kVc-icUcZv41s
+
+librarian-user (librarian) id: 7
+------------------------------
+librarian@mail.com
+librarianzrule
+eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3fQ.KuDWvW5lDfeoesF55jjh0t9DBk5L9Cp_MMEkn5gF1Kw
+
+regular-user (user) id: 8
+-------------------------------
+test@mail.com
+passtest
+eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4fQ.o74C1PE8yeziMGZeviBuzsBklH-sYUWg_zpz3Bb9NJI
+
+other user (user) id: 9
+-------------------------------
+random@mail.com
+random
+eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5fQ.FNQ-bTk3ou0mhOFQ0Fv5tfHC1ScVUz1YqXMG3Qxba68
