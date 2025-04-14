@@ -17,7 +17,9 @@ class Api::V1::MeetingsController < ApplicationController
   def create
     meeting = Meeting.new(
       date: params[:date],
-      time: params[:time]
+      time: params[:time],
+      selected_book: params[:selected_book],
+      genre: params[:genre]
     )
     # authorize meeting
 
@@ -34,7 +36,9 @@ class Api::V1::MeetingsController < ApplicationController
 
     if meeting.update(
       date: params[:date] || meeting.date,
-      time: params[:time] || meeting.time
+      time: params[:time] || meeting.time,
+      selected_book: params[:selected_book] || meeting.selected_book,
+      genre: params[:genre] || meeting.genre
     )
       render json: meeting
     else
