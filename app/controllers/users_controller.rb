@@ -9,19 +9,19 @@ class UsersController < ApplicationController
 
   def show
     user = User.find(params[:id])
-    render json: user
+    render json: user.as_json(include: :recommendations)
   end
 
   def create
     user = User.new(
       name: params[:name],
       email: params[:email],
-      password: params[:password],
-      password_confirmation: params[:password_confirmation],
-      role: params[:role]
+      password: params[:password] #,
+      # password_confirmation: params[:password_confirmation],
+      # role: params[:role]
     )
-    if user.save
-      render json: { message: 'User created successfully' }, status: :created
+    if user.save!
+      render json: user
     else
       render json: { errors: user.errors.full_messages }, status: :unprocessable_entity
     end
