@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :email, presence: true
-  validates :password, presence: true
+  # validates :password, presence: true
   # validates :role, inclusion: { in: %w[user librarian admin], message: "%{value} is not a valid role" }
 
   # def admin?

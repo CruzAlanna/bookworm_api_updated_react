@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   post '/login', to: 'sessions#create'
-  
+  get '/me', to: 'users#show'
   get '/bookclub', to: 'users#index'
   get '/view_profile/:id', to: 'users#show'
   post '/signup', to: 'users#create'
