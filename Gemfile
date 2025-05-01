@@ -19,7 +19,7 @@ gem 'pundit' #For pundit policies
 
 gem 'sidekiq'
 
-gem 'rspec-rails', '~> 5.0'
+gem 'rspec-rails', '~> 8.0'
 gem 'factory_bot_rails' #For serializers
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
